@@ -1,0 +1,232 @@
+/**
+ * Estilos da página Login
+ * 
+ * Design melhorado com logo, ícones e melhor experiência visual.
+ * Mantém as cores originais do projeto com melhorias de UX.
+ */
+
+// Estilos do body quando está na página de login
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  // Gradiente de fundo azul
+  background: #000000;
+  background: linear-gradient(0deg, rgba(60, 88, 133, 1) 0%, rgba(5, 4, 94, 1) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+// Container principal do login
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  // Gradiente de fundo do card
+  background: #75b3ff;
+  background: linear-gradient(0deg, rgb(64, 149, 253) 0%, rgba(255, 255, 255, 1) 100%);
+  padding: 50px 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  width: 450px;
+  max-width: 90%;
+  text-align: center;
+  // Animação suave de entrada
+  animation: fadeIn 0.5s ease-in;
+
+  // Container da logo
+  .logo-container {
+    margin-bottom: 20px;
+    
+    // Estilo da logo
+    .logo {
+      width: 120px;
+      height: 120px;
+      // Animação de rotação suave ao carregar
+      animation: logoFloat 3s ease-in-out infinite;
+    }
+  }
+
+  // Título principal
+  h1 {
+    margin-bottom: 10px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  // Subtítulo
+  .subtitle {
+    margin-bottom: 30px;
+    color: #333333;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  // Grupo de campos do formulário
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 100%;
+
+    // Label dos campos
+    label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+      color: #111111;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: 500;
+      font-size: 14px;
+
+      // Ícone dentro do label
+      .input-icon {
+        color: #0168ad;
+        font-size: 16px;
+      }
+    }
+
+    // Inputs de texto e senha
+    input[type="text"],
+    input[type="password"],
+    input[type="email"] {
+      width: 100%;
+      padding: 12px 15px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      transition: border-color 0.3s, box-shadow 0.3s;
+
+      // Efeito quando o input está em foco
+      &:focus {
+        outline: none;
+        border-color: #0168ad;
+      }
+
+      // Placeholder
+      &::placeholder {
+        color: #999;
+      }
+    }
+  }
+
+  // Container do input de senha com botão de mostrar/ocultar
+  .password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    // Input de senha dentro do container
+    input {
+      padding-right: 45px;
+    }
+
+    // Botão para mostrar/ocultar senha
+    .password-toggle {
+      position: absolute;
+      right: 12px;
+      background: none;
+      border: none;
+      color: #666;
+      cursor: pointer;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      transition: color 0.2s;
+
+      // Efeito hover no botão
+      &:hover {
+        color: #0168ad;
+      }
+
+      // Remove o outline ao focar
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  // Botão de login
+  .btn-login {
+    width: 100%;
+    padding: 14px;
+    background-color: #0168ad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+
+    // Efeito hover quando não está desabilitado
+    &:hover:not(:disabled) {
+      background-color: #0056b3;
+      transform: translateY(-2px);
+    }
+
+    // Efeito quando está desabilitado (carregando)
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+    // Efeito quando é clicado
+    &:active:not(:disabled) {
+      transform: translateY(0);
+    }
+  }
+
+  // Parágrafo com link de cadastro
+  p.register-link {
+    margin-top: 25px;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+
+    // Link dentro do parágrafo
+    a {
+      color: #0168ad;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s;
+
+      // Efeito hover no link
+      &:hover {
+        color: #0056b3;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Animação de entrada do container
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Animação da logo flutuando
+@keyframes logoFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}

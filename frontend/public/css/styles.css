@@ -1,0 +1,150 @@
+/* Importa a fonte Montserrat do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+/* Reset das margens, paddings e box model */
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  outline: none !important;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  height: 100%; /* Altura total da página */
+  font-family: 'Montserrat', sans-serif; /* Define a fonte para todo o documento */
+  background-color: #00ffd9; /* Cor de fundo escura */
+  color: #263238; /* Cor do texto */
+  overflow: hidden; /* Remove a barra de rolagem */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+#particle-canvas {
+  position: fixed; /* Posição fixa na tela */
+  top: 0; left: 0; /* Alinhado ao topo e à esquerda */
+  width: 100vw; /* Largura total da viewport */
+  height: 100vh; /* Altura total da viewport */
+  z-index: 0; /* Fica atrás de outros elementos */
+  background: #020024;
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.login-container {
+  position: relative; /* Posição relativa para o container */
+  z-index: 1; /* Fica acima do canvas */
+  max-width: 400px; /* Largura máxima do container */
+  width: 90%; /* Largura responsiva */
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  padding: 2rem 2.5rem; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+  backdrop-filter: blur(6px); /* Efeito de desfoque no fundo */
+  color: #000000; /* Cor do texto dentro do container */
+}
+
+.login-container h2 {
+  font-weight: 600; /* Peso da fonte em negrito */
+  margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+  text-align: center; /* Centraliza o texto */
+  font-size: 2rem; /* Tamanho da fonte */
+}
+
+.form-group {
+  margin-bottom: 1.3rem; /* Espaçamento abaixo de cada grupo de formulário */
+}
+
+label {
+  display: block; /* Exibe como bloco (uma linha inteira) */
+  margin-bottom: 0.5rem; /* Espaçamento abaixo da label */
+  font-weight: 600; /* Peso da fonte em negrito */
+  font-size: 1rem; /* Tamanho da fonte */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%; /* Largura total do container pai */
+  padding: 0.85rem 1rem; /* Espaçamento interno */
+  font-size: 1rem; /* Tamanho da fonte */
+  border: 1px solid #b0bec5; /* Borda cinza clara */
+  border-radius: 8px; /* Bordas arredondadas */
+  outline: none; /* Remove o contorno padrão */
+  background-color: #ffffff; /* Fundo branco */
+  color: #263238; /* Cor do texto */
+  transition: border-color 0.3s ease; /* Transição suave para a cor da borda */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #ffffff; /* Muda a cor da borda para branco no foco */
+}
+
+/* Estilos para campos inválidos */
+input[type="text"].invalid,
+input[type="password"].invalid {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1);
+}
+
+input[type="text"].invalid:focus,
+input[type="password"].invalid:focus {
+  border-color: #e53e3e;
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.2);
+}
+
+/* Estilos para mensagens de erro */
+.error-message {
+  display: none;
+  color: #e53e3e;
+  font-size: 0.8rem;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}
+
+button {
+  width: auto; /* Ajusta largura automática */
+  display: block;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(70, 182, 252, 1) 100%); /* Gradiente azul */
+  color: white; /* Cor do texto branco */
+  font-weight: 700; /* Peso da fonte em negrito */
+  font-size: 1.1rem; /* Tamanho da fonte */
+  padding: 1rem 3rem; /* Espaçamento interno vertical e horizontal */
+  border: none; /* Remove a borda padrão */
+  border-radius: 25px; /* Bordas completamente arredondadas */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  box-shadow: 0 6px 20px rgba(0, 217, 255, 0.6); /* Sombra roxa */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
+}
+
+button.btn-grad {
+  background: none !important;
+  box-shadow: none !important;
+  width: auto !important;
+  padding: 15px 45px !important;
+  border-radius: 10px !important;
+  color: white !important;
+  font-weight: 700 !important;
+  font-size: 1.1rem !important;
+  cursor: pointer !important;
+  transition: all 0.5s ease !important;
+}
+
+button.btn-grad:hover {
+  background-color: transparent !important;
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    padding: 1.5rem 2rem;
+  }
+  .login-container h2 {
+    font-size: 1.6rem;
+  }
+}

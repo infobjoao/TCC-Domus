@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="sobre.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domus - Sobre</title>
+</head>
+<body>
+
+    <div class="barr">
+        <h1>Domus</h1>
+    <div class="bar-text">
+         <div class="gif-org">
+            <a href="inicio.html"> <img class="gif" src="../../public/assets/image/botao-de-inicio.png"> <h3>Inicio</h3> </a>
+            <a href="finanças.html"> <img class="gif" src="../../public/assets/video/output-onlinegiftools.gif"> <h3>Finanças</h3> </a>
+            <a href="mensagens.html"> <img class="gif" src="../../public/assets/video/output-onlinegiftools (1).gif"> <h3>Mensagens</h3> </a>
+            <a href="chamados.html"> <img class="gif" src="../../public/assets/video/output-onlinegiftools (6).gif  ">  <h3>Chamados</h3> </a>
+            <a href="sobre.html"> <img class="gif" src="../../public/assets/video/output-onlinegiftools (4).gif"> <h3>sobre</h3> </a>
+            <a href=""> <img class="contato" src="/public/assets/image/instagram.png"</a>
+            
+         </div>
+    </div>
+</div>
+<div class="cab">
+    <a href="settings"><img class="settings" src="../../public/assets/image/settings.png"></a>
+    <div class="profile-container">
+        <a><img class="user" id="profile-icon" src="../../public/assets/image/user (1).png" alt="Perfil"> </a>
+        <div class="dropdown-menu" id="dropdown-menu">
+            <div class="user-info">
+                <p id="logged-user">Usuário logado</p>
+            </div>
+            <a href="/src/page/settings.html" id="settings">Configuração</a>
+            <a href="/src/page/index.html" id="switch-account">Trocar de conta</a>
+            <a href="/src/home/começo.html" id="logout">Sair</a>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <h2>Sobre o Domus</h2>
+    <p>Conheça mais sobre nossa plataforma de gestão de condomínios.</p>
+    <div class="about-section">
+        <div class="about-card">
+            <h3>Nossa Missão</h3>
+            <p>Simplificar a administração de condomínios, conectando síndicos e moradores de forma eficiente e transparente.</p>
+        </div>
+        <div class="about-card">
+            <h3>Funcionalidades</h3>
+            <ul>
+                <li>Gestão financeira completa</li>
+                <li>Comunicação integrada</li>
+                <li>Sistema de chamados de manutenção</li>
+                <li>Votações online</li>
+                <li>Reservas de áreas comuns</li>
+            </ul>
+        </div>
+        <div class="about-card">
+            <h3>Contato</h3>
+            <p>Email: contato@domus.com</p>
+            <p>Telefone: (11) 1234-5678</p>
+            <p>Siga-nos no Instagram: @domus_condominios</p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const profileIcon = document.getElementById('profile-icon');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+        const loggedUser = document.getElementById('logged-user');
+        const settings = document.getElementById('settings');
+        const switchAccount = document.getElementById('switch-account');
+        const logout = document.getElementById('logout');
+
+        const usuario = localStorage.getItem('usuario');
+        if (usuario) {
+            loggedUser.textContent = usuario;
+        } else {
+            loggedUser.textContent = 'Usuário não logado';
+        }
+
+        profileIcon.addEventListener('click', function(event) {
+            event.preventDefault();
+            dropdownMenu.classList.toggle('show');
+        });
+
+        document.addEventListener('click', function(event) {
+            if (!profileIcon.contains(event.target) && !dropdownMenu.contains(event.target)) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+
+        switchAccount.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = 'index.html';
+        });
+
+        settings.addEventListener('click', function(event) {
+            event.preventDefault();
+            window.location.href = '/src/page/settings.html';
+        });
+
+        logout.addEventListener('click', function(event) {
+            event.preventDefault();
+            localStorage.removeItem('usuario');
+            window.location.href = '/src/home/começo.html';
+        });
+    });
+</script>
+
+</body>
+</html>

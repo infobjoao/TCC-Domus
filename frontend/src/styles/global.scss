@@ -1,0 +1,102 @@
+$primary-blue: #0168ad;
+$primary-dark-blue: rgb(255, 255, 255);
+$primary-light-blue: #0274ff;
+$background-gray: rgb(255, 255, 255);
+$white: #ffffff;
+$text-dark: #333333;
+$text-light: #666666;
+$border-light: rgba(150, 150, 150, 0.26);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: $background-gray;
+  color: $text-dark;
+  line-height: 1.6;
+}
+
+body, html {
+  background: #fff !important;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  cursor: pointer;
+  border: none;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+input,
+select,
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.home-container,
+.financas-container,
+.mensagens-container,
+.chamados-container,
+.sobre-container,
+.settings-container {
+  display: flex;
+  flex-direction: row;
+  background-color: $background-gray;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 240px;
+  margin-top: 10vh;
+  width: calc(100% - 240px);
+
+  h2 {
+    color: $primary-blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    color: $text-dark;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Gestão de Condomínio</title>
+    <link rel="stylesheet" href="cadastro.css">
+    <script src="cadastro.js"></script>
+</head>
+<body>
+    <div class="cadastro-container">
+        <h1>Cadastro</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirmar Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <div class="form-group">
+                <label>Tipo de Usuário:</label>
+                <div class="radio-group">
+                    <input type="radio" id="sindico" name="role" value="sindico" required>
+                    <label for="sindico">Síndico</label>
+                    <input type="radio" id="morador" name="role" value="morador" required>
+                    <label for="morador">Morador</label>
+                </div>
+            </div>
+            <button type="submit" class="btn-cadastro">Cadastrar</button>
+        </form>
+        <p>Já tem conta? <a href="login.html">Faça login aqui</a></p>
+    </div>
+</body>
+</html>

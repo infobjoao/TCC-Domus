@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "fvfdvdfv",
+      "email": "teste@email.com",
+      "password": "$2a$10$AVB6bbMtr1iAYXEq3tIHueobsZ/ZLZvXySmVZbzhfAWfdXuLa3dCu",
+      "role": "sindico",
+      "createdAt": "2025-11-14T15:47:03.845Z"
+    },
+    {
+      "id": 2,
+      "name": "dfvfvk",
+      "email": "a@gmail.com",
+      "password": "$2a$10$hjtXiTuPWBkO1B2takxxJ.ESI3AS4/MpkspwMf0kPb5WlnDcZH9Ii",
+      "role": "sindico",
+      "createdAt": "2025-11-14T16:10:54.692Z"
+    },
+    {
+      "id": 3,
+      "name": "sqrwefwefwef",
+      "email": "joaogoncalves6548@gmail.com",
+      "password": "$2a$10$Gp39SoxfuXIKdrCXrJywH.Q5yj3DqA0sIUMOJSAfQCvpU5ffOT9i.",
+      "role": "sindico",
+      "createdAt": "2025-11-14T22:40:11.562Z"
+    },
+    {
+      "id": 4,
+      "name": "JOAO VICTOR GONCALVES LEAL DA SILVA",
+      "email": "Seila1234@gmail.com",
+      "password": "$2a$10$gIBGwkGif4mY4rGiJA5G1uvEtQazcXXAaalbXgTwLj8dbvlJUxyda",
+      "role": "morador",
+      "createdAt": "2025-11-15T20:17:49.132Z"
+    }
+  ],
+  "financas": [],
+  "mensagens": [
+    {
+      "id": 1,
+      "titulo": "fwijfwjfw",
+      "remetente": "Síndico",
+      "conteudo": "fwfwfwfwf",
+      "destinatario": "sindico",
+      "data": "2025-11-16T00:51:14.770Z",
+      "createdAt": "2025-11-16T00:51:14.770Z"
+    },
+    {
+      "id": 2,
+      "titulo": "vsgsgsgsgs",
+      "remetente": "Síndico",
+      "conteudo": "bdsgs",
+      "destinatario": "all",
+      "data": "2025-11-16T01:47:31.355Z",
+      "createdAt": "2025-11-16T01:47:31.355Z"
+    },
+    {
+      "id": 3,
+      "titulo": "ola",
+      "remetente": "Síndico",
+      "conteudo": "bfajfbwjf",
+      "destinatario": "sindico",
+      "data": "2025-11-16T02:29:03.392Z",
+      "createdAt": "2025-11-16T02:29:03.393Z"
+    }
+  ],
+  "chamados": [
+    {
+      "id": 1,
+      "titulo": "ujgkugug",
+      "descricao": "hgyfjyifj,j nl88d6tld,xssdfydx8ug",
+      "prioridade": "alta",
+      "status": "resolvido",
+      "moradorId": 3,
+      "moradorNome": "Morador",
+      "data": "2025-11-14T22:45:00.619Z",
+      "createdAt": "2025-11-14T22:45:00.620Z",
+      "resolvidoEm": "2025-11-14T22:45:53.578Z",
+      "resolvidoPor": "Síndico"
+    },
+    {
+      "id": 2,
+      "titulo": "porfavor preciso e ajuda muito fogo no andar 3",
+      "descricao": "muito fogo no andar 3",
+      "prioridade": "alta",
+      "status": "resolvido",
+      "moradorId": 4,
+      "moradorNome": "Morador",
+      "data": "2025-11-15T20:37:21.534Z",
+      "createdAt": "2025-11-15T20:37:21.543Z",
+      "resolvidoEm": "2025-11-15T21:33:24.009Z",
+      "resolvidoPor": "Síndico"
+    },
+    {
+      "id": 3,
+      "titulo": "urgente",
+      "descricao": "a poça de lama  foi limpada etou muito triste",
+      "prioridade": "alta",
+      "status": "resolvido",
+      "moradorId": 3,
+      "moradorNome": "Morador",
+      "data": "2025-11-15T21:34:01.498Z",
+      "createdAt": "2025-11-15T21:34:01.498Z",
+      "resolvidoEm": "2025-11-15T21:34:10.741Z",
+      "resolvidoPor": "Síndico"
+    },
+    {
+      "id": 4,
+      "titulo": "f\\zf\\fsfs\\",
+      "descricao": "fafafaffaf",
+      "prioridade": "baixa",
+      "status": "resolvido",
+      "moradorId": 4,
+      "moradorNome": "Morador",
+      "data": "2025-11-16T00:49:30.759Z",
+      "createdAt": "2025-11-16T00:49:30.759Z",
+      "resolvidoEm": "2025-11-16T00:50:43.117Z",
+      "resolvidoPor": "Síndico"
+    }
+  ]
+}

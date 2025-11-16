@@ -1,0 +1,188 @@
+.financas-container {
+ display: flex;
+  flex-direction: row;
+ background-color: rgb(247, 247, 247);
+  margin: 0;
+ min-height: 100vh;
+}
+
+.content {
+  padding: 20px;
+  margin-left: 19vw;
+  margin-top: 20vh;
+  width: calc(100% - 19vw);
+}
+
+.finance-overview {
+  display: flex;
+  gap: 20px;
+  margin-top: 270px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .card {
+    background: #0274ff;
+    background: linear-gradient(180deg, rgba(0, 106, 228, 0.966) 0%, rgb(195, 241, 255) 100%);
+    border-radius: 20px;
+    padding: 25px;
+    flex: 0 0 250px;
+    box-shadow: 0 2px 20px rgb(184, 184, 184);
+   text-align: center;
+    color: white;
+   h3 {
+    color: white;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 22px;
+     margin-bottom: 15px;
+}
+
+   .valor {
+     font-size: 28px;
+     font-weight: bold;
+     color: white;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  &.receita {
+      background: linear-gradient(180deg, rgba(40, 167, 69, 0.966) 0%, rgb(195, 255, 200) 100%);
+   }
+
+    &.despesa {
+      background: linear-gradient(180deg, rgba(220, 53, 69, 0.966) 0%, rgb(255, 195, 195) 100%);
+    }
+
+    &.saldo {
+      background: linear-gradient(180deg, rgba(0, 106, 228, 0.966) 0%, rgb(195, 241, 255) 100%);
+    }
+  }
+}
+
+.apply-value-section {
+  background: white;
+  border-radius: 15px;
+ padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+ margin-top: 40px;
+
+  h3 {
+    color: #0168ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+ }
+
+  .form-group {
+    margin-bottom: 20px;
+
+   label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+   }
+
+    select,
+    input[type="number"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+     box-sizing: border-box;
+
+     &:focus {
+        outline: none;
+       border-color: #0168ad;
+      }
+    }
+  }
+
+  .btn-apply {
+      width: 100%;
+   padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 16px;
+    font-weight: bold;
+   cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover:not(:disabled) {
+     background-color: #0056b3;
+    }
+
+   &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.transactions {
+  margin-top: 40px;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #0168ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    thead {
+    background-color: #0168ad;
+      color: white;
+     th {
+       padding: 12px;
+        text-align: left;
+       font-weight: bold;
+      }
+    }
+
+    tbody {
+      tr {
+          border-bottom: 1px solid #e0e0e0;
+
+        &:hover {
+          background-color: #f5f5f5;
+        }
+
+        td {
+          padding: 12px;
+          color: #333;
+     }
+      }
+    }
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &.receita {
+    background-color: #28a745;
+    color: white;
+  }
+
+  &.despesa {
+    background-color: #dc3545;
+    color: white;
+  }
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #3c5885;
+    background: linear-gradient(0deg, rgba(60, 88, 133, 1) 0%, rgba(5, 4, 94, 1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.cadastro-container {
+    background: #75b3ff;
+    background: linear-gradient(0deg, rgba(117, 179, 255, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5px;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.btn-cadastro {
+    width: 100%;
+    padding: 10px;
+    background-color: #1000eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cadastro:hover {
+    background-color: #3b2dfd;
+}
+
+p {
+    margin-top: 20px;
+    color: #666;
+}
+
+a {
+    color: #0012b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

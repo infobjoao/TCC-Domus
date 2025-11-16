@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #ffffff;
+}
+
+img{
+    box-shadow: 0px 7px 10px black ;
+}
+
+img:hover{
+    transform: scale(1.01);
+}
+
+.i-1{
+    margin-left: 10px;
+    
+}
+
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    background: #ffffff;
+    flex-wrap: wrap;
+}
+
+.group img {
+    max-width: 100%;
+    width: 600px;
+    border-radius: 30px;
+    opacity: 85%;
+    object-fit: cover;
+    flex: 1 1 400px; 
+}
+
+.cabecalho {
+    max-width: 600px;
+    flex: 1 1 400px;
+}
+
+.text-p h1 {
+    font-size: 48px;
+    margin: 0 0 20px 0;
+    color: #1e3a8a; 
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.text-p p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.5;
+}
+
+.botoes {
+    display: flex;
+    gap: 15px;
+}
+
+
+.botoes b{
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #002aff;
+    color: #ff0000;
+}
+
+.botoes a {
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #1e3a8a;
+    color: #1e3a8a;
+}
+
+
+
+.texto {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+.texto h2 {
+    font-size: 28px;
+    color: #111;
+    margin-bottom: 10px;
+    
+}
+
+.texto p.white {
+    font-size: 18px;
+    color: #555;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.card {
+    background: #000f5c;
+    background: linear-gradient(170deg, rgba(0, 15, 92, 1) 0%, rgba(0, 118, 181, 1) 48%, rgba(0, 174, 255, 1) 74%, rgba(99, 226, 242, 1) 99%);
+    border-radius: 15px;
+    padding: 25px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease-in-out;
+    color: white; 
+    display: flex;
+    justify-content: baseline;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 7px 15px rgb(94, 94, 94);
+}
+
+svg {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+    fill: #01167d; 
+}
+
+.text-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.p-card {
+    font-size: 15px;
+    color: #f1f1f1;
+    line-height: 1.5;
+}

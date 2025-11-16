@@ -1,0 +1,30 @@
+{
+  "name": "tcc-domus",
+  "version": "1.0.0",
+  "description": "Sistema DOMUS - Gestão de Condomínios (TCC) - Projeto Completo",
+  "main": "index.js",
+  "scripts": {
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "dev:frontend": "cd frontend && npm start",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "build:frontend": "cd frontend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "keywords": [
+    "condominio",
+    "gestao",
+    "tcc",
+    "react",
+    "nodejs"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "sass-loader": "^14.2.1"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.3"
+  }
+}

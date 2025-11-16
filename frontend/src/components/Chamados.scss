@@ -1,0 +1,185 @@
+.chamados-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(247, 247, 247);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.content {
+  background: #fff;
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  margin-left: 240px;
+}
+
+.chamados-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 30px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.new-chamado {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+
+  h3 {
+    color: #0168ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-weight: bold;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 14px;
+      box-sizing: border-box;
+
+      &:focus {
+        outline: none;
+        border-color: #0168ad;
+      }
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+  }
+
+  .btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover:not(:disabled) {
+      background-color: #0056b3;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.chamados-list {
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  max-height: 600px;
+  overflow-y: auto;
+
+  h3 {
+    color: #0168ad;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+.chamado-item {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 4px solid #0168ad;
+
+  .chamado-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h4 {
+      color: #0168ad;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .prioridade-badge {
+      padding: 5px 12px;
+      border-radius: 15px;
+      color: white;
+      font-size: 11px;
+      font-weight: bold;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  }
+
+  .status {
+    color: #666;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+
+  .descricao {
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  .date {
+    color: #999;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+
+  .btn-resolve {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #218838;
+    }
+  }
+}

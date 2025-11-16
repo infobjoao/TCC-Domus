@@ -1,0 +1,22 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Camadas externas de casas em tons de azul -->
+  <!-- Casa azul escuro (esquerda) -->
+  <path d="M30 120 L30 80 L50 60 L70 80 L70 120 Z" fill="#1a3a5c" opacity="0.9"/>
+  
+  <!-- Casa azul médio (centro) -->
+  <path d="M50 100 L50 60 L80 40 L110 60 L110 100 Z" fill="#2d5a8a" opacity="0.85"/>
+  
+  <!-- Casa azul claro (direita) -->
+  <path d="M90 110 L90 70 L115 50 L140 70 L140 110 Z" fill="#4a7fb8" opacity="0.8"/>
+  
+  <!-- Casa central destacada -->
+  <!-- Telhado em turquesa -->
+  <path d="M75 70 L75 50 L100 35 L125 50 L125 70 Z" fill="#40e0d0" stroke="white" stroke-width="2"/>
+  
+  <!-- Corpo da casa em verde lima -->
+  <rect x="80" y="70" width="40" height="35" fill="#bfff00" stroke="white" stroke-width="2"/>
+  
+  <!-- Porta da casa -->
+  <rect x="92" y="85" width="16" height="20" fill="#1a3a5c"/>
+</svg>
+
