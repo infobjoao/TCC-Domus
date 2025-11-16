@@ -115,6 +115,19 @@
       "createdAt": "2025-11-16T00:49:30.759Z",
       "resolvidoEm": "2025-11-16T00:50:43.117Z",
       "resolvidoPor": "Síndico"
+    },
+    {
+      "id": 5,
+      "titulo": "elevador assombrado",
+      "descricao": "cuidado com  elevador",
+      "prioridade": "media",
+      "status": "resolvido",
+      "moradorId": 4,
+      "moradorNome": "Morador",
+      "data": "2025-11-16T04:24:22.982Z",
+      "createdAt": "2025-11-16T04:24:22.982Z",
+      "resolvidoEm": "2025-11-16T04:24:44.238Z",
+      "resolvidoPor": "Síndico"
     }
   ]
 }
